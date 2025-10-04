@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>ElectroCompare</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>index</servlet-name>
+    <jsp-file>/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>index</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  
+  <!-- cpu.jsp 매핑 -->
+<servlet>
+  <servlet-name>CPUServlet</servlet-name>
+  <jsp-file>/cpu.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>CPUServlet</servlet-name>
+  <url-pattern>/CPU</url-pattern>
+</servlet-mapping>
+
+<!-- gpu.jsp 매핑 -->
+<servlet>
+  <servlet-name>GPUServlet</servlet-name>
+  <jsp-file>/gpu.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>GPUServlet</servlet-name>
+  <url-pattern>/GPU</url-pattern>
+</servlet-mapping>
+
+<!-- smap.jsp 매핑 -->
+<servlet>
+  <servlet-name>SmartPhone-Servlet</servlet-name>
+  <jsp-file>/smap.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>SmartPhone-Servlet</servlet-name>
+  <url-pattern>/SmartPhone</url-pattern>
+</servlet-mapping>
+
+<!-- bbs.jsp 매핑 -->
+<servlet>
+  <servlet-name>bbsServlet</servlet-name>
+  <jsp-file>/bbs.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>bbsServlet</servlet-name>
+  <url-pattern>/board</url-pattern>
+</servlet-mapping>
+
+<!-- signup.jsp 매핑 -->
+<servlet>
+  <servlet-name>SignUPServlet</servlet-name>
+  <jsp-file>/membership.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>SignUPServlet</servlet-name>
+  <url-pattern>/signUp</url-pattern>
+</servlet-mapping>
+
+<!-- Membership_process.jsp 매핑 -->
+<servlet>
+  <servlet-name>SignUPprocess</servlet-name>
+  <jsp-file>/Membership_process.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>SignUPprocess</servlet-name>
+  <url-pattern>/signUp/result</url-pattern>
+</servlet-mapping>
+
+<!-- Login.jsp 매핑 -->
+
+<servlet>
+  <servlet-name>LoginServlet</servlet-name>
+  <jsp-file>/MemberLogin.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/login</url-pattern>
+</servlet-mapping>
+
+<!-- MemberLogin_process.jsp 매핑 -->
+<servlet>
+  <servlet-name>Login_process-Servlet</servlet-name>
+  <jsp-file>/MemberLogin_process.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>Login_process-Servlet</servlet-name>
+  <url-pattern>/login/result</url-pattern>
+</servlet-mapping>
+
+<!-- SearchPassword.jsp 매핑 -->
+<servlet>
+  <servlet-name>SearchPasswordServlet</servlet-name>
+  <jsp-file>/searchPassword.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>SearchPasswordServlet</servlet-name>
+  <url-pattern>/searchPassword</url-pattern>
+</servlet-mapping>
+
+<!-- searchPassword_process.jsp 매핑 -->
+<servlet>
+  <servlet-name>SearchPassword_process-Servlet</servlet-name>
+  <jsp-file>/searchPassword_process.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>SearchPassword_process-Servlet</servlet-name>
+  <url-pattern>/searchPassword/result</url-pattern>
+</servlet-mapping>
+
+<!-- changePassword.jsp 매핑 -->
+<servlet>
+  <servlet-name>ChangePasswordServlet</servlet-name>
+  <jsp-file>/changePassword.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>ChangePasswordServlet</servlet-name>
+  <url-pattern>/changePassword</url-pattern>
+</servlet-mapping>
+
+<!-- changePassword_process.jsp 매핑 -->
+<servlet>
+  <servlet-name>ChangePassword_process-Servlet</servlet-name>
+  <jsp-file>/changePassword_process.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>ChangePassword_process-Servlet</servlet-name>
+  <url-pattern>/changePassword/result</url-pattern>
+</servlet-mapping>
+
+<!-- logout.jsp 매핑 -->
+<servlet>
+  <servlet-name>Logout-Servlet</servlet-name>
+  <jsp-file>/MemberLogout_process.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>Logout-Servlet</servlet-name>
+  <url-pattern>/logout</url-pattern>
+</servlet-mapping>
+
+<!-- MembershipDelete.jsp 매핑 -->
+<servlet>
+  <servlet-name>QuitMembership-Servlet</servlet-name>
+  <jsp-file>/MembershipDelete.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>QuitMembership-Servlet</servlet-name>
+  <url-pattern>/quitMembership</url-pattern>
+</servlet-mapping>
+
+<!-- Membership_process.jsp 매핑 -->
+<servlet>
+  <servlet-name>QuitMembership_process-Servlet</servlet-name>
+  <jsp-file>/MembershipDelete_process.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>QuitMembership_process-Servlet</servlet-name>
+  <url-pattern>/quitMembership/result</url-pattern>
+</servlet-mapping>
+
+<!-- writeifuserLogin_process.jsp 매핑 -->
+<servlet>
+  <servlet-name>ifuserLogin-Servlet</servlet-name>
+  <jsp-file>/writeifuserLogin_process.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>ifuserLogin-Servlet</servlet-name>
+  <url-pattern>/board/writeCondition</url-pattern>
+</servlet-mapping>
+
+<!-- write.jsp 매핑 -->
+<servlet>
+  <servlet-name>writeBoard-Servlet</servlet-name>
+  <jsp-file>/write.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>writeBoard-Servlet</servlet-name>
+  <url-pattern>/board/write</url-pattern>
+</servlet-mapping>
+
+<!-- writeAction.jsp 매핑 -->
+<servlet>
+  <servlet-name>writeBoard_action-Servlet</servlet-name>
+  <jsp-file>/writeAction.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>writeBoard_action-Servlet</servlet-name>
+  <url-pattern>/board/write/result</url-pattern>
+</servlet-mapping>
+
+<!-- view.jsp 매핑 -->
+<servlet>
+  <servlet-name>viewBoard-Servlet</servlet-name>
+  <jsp-file>/view.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>viewBoard-Servlet</servlet-name>
+  <url-pattern>/board/view</url-pattern>
+</servlet-mapping>
+
+<!-- update.jsp 매핑 -->
+<servlet>
+  <servlet-name>updateBoard-Servlet</servlet-name>
+  <jsp-file>/update.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>updateBoard-Servlet</servlet-name>
+  <url-pattern>/board/view/update</url-pattern>
+</servlet-mapping>
+
+<!-- updateAction.jsp 매핑 -->
+<servlet>
+  <servlet-name>updateBoard_process-Servlet</servlet-name>
+  <jsp-file>/updateAction.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>updateBoard_process-Servlet</servlet-name>
+  <url-pattern>/board/view/update/result</url-pattern>
+</servlet-mapping>
+
+<!-- deleteAction.jsp 매핑 -->
+<servlet>
+  <servlet-name>deleteBoard-Servlet</servlet-name>
+  <jsp-file>/deleteAction.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>deleteBoard-Servlet</servlet-name>
+  <url-pattern>/board/view/delete</url-pattern>
+</servlet-mapping>
+
+<error-page>
+	<error-code>404</error-code>
+	<location>/errors/404.jsp</location>
+  </error-page>
+  <error-page>
+	<error-code>500</error-code>
+	<location>/errors/500.jsp</location>
+  </error-page>
+  <error-page>
+	<error-code>503</error-code>
+	<location>/errors/503.jsp</location>
+  </error-page>
+</web-app>

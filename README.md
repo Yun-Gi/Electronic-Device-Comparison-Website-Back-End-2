@@ -8,7 +8,7 @@
 
 1. [프로젝트 소개](#-프로젝트-소개)
 2. [주요 기능](#-주요-기능)
-3. [미리보기](#-[미리보기](https://github.com/Yun-Gi/Electronic-Device-Comparison-Website-Back-End-2/blob/main/README.md#%EF%B8%8F-%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0))
+3. [미리보기](#-미리보기)
 4. [사용 기술](#-사용-기술)
 5. [설치 및 실행 방법](#-설치-및-실행-방법)
 6. [팀원 소개](#-팀원-소개)

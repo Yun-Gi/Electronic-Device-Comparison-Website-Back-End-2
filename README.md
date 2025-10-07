@@ -54,7 +54,7 @@ $ npm install
 
 # 3. 애플리케이션 실행
 $ npm start
-bash```
+```
 
 <br>
 

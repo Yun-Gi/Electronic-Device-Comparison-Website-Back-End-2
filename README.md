@@ -25,7 +25,7 @@
 ## ✨ 주요 기능
 
 - **기능 1:** 전자기기(스마트폰, GPU, CPU)의 스펙을 비교할 수 있습니다.
-- **기능 2:** 게시판에서 다른 사용자들과 의견을 공유할 수 있습니다.
+- **기능 2:** 게시글 작성, 조회, 수정, 삭제(CRUD)가 가능한 게시판 기능
 
 <br>
 
@@ -40,7 +40,7 @@
 - **Backend:** `Java`, `JPA`, `JSP`
 - **Frontend:** `HTML`, `CSS`, `JavaScript`
 - **Database:** `MySQL`
-
+- **Web Server:** `Apache Tomcat`
 <br>
 
 ## ⚙️ 설치 및 실행 방법
@@ -54,7 +54,7 @@ $ npm install
 
 # 3. 애플리케이션 실행
 $ npm start
-```bash
+bash```
 
 <br>
 

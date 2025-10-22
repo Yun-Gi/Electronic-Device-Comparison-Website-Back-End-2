@@ -37,7 +37,7 @@
 
 ## 🛠️ 사용 기술
 
-- **Backend:** `Java`, `JPA`, `JSP`
+- **Backend:** `Java`, `JSP`, `JDBC`
 - **Frontend:** `HTML`, `CSS`, `JavaScript`
 - **Database:** `MySQL`
 - **Web Server:** `Apache Tomcat`
@@ -51,15 +51,23 @@
 저는 Eclipse를 사용해서 개발하였습니다. 아마 다른 IDE로도 실행은 되겠지만 테스트는 안 해봤습니다.
 
 # 1. 저장소 클론
-$ git clone https://github.com/Yun-Gi/Electronic-Device-Comparison-Website-Back-End-2.git
+git clone https://github.com/Yun-Gi/Electronic-Device-Comparison-Website-Back-End-2.git
 
 # 2. 데이터베이스 설정
-$ 
+로컬 PC에서 MySQL 서버를 실행하고 새로운 데이터 베이스 스키마를 생성합니다. 마지막으로 SQL파일을 이용해 스키마에 테이블을 추가합니다.
+src/main/java/util/DatabaseUtil.java에서 dbURL, dbID, dbPassword를 환경에 맞게 수정해주세요.
+테스트는 느낌으로 간단하게 만든 DB라서 따로 DB를 만들던지 외부에서 크롤링을 하던지 바꾸셔도 상관없습니다.
 
 # 3. 프로젝트 임포트 및 설정
-$ npm start
+Eclipse에서 Import Project from External Model > Maven을 선택해서 이 프로젝트를 불러옵니다. 
+프로젝트를 불러온 후, Eclipse가 pom.xml을 기반으로 Maven 라이브러리(dependencies)를 모두 다운로드할 때까지 잠시 기다립니다.
 
 # 4. 웹 서버 연동 및 실행
+Eclipse 하단의 'Servers' 탭으로 이동하여 New Server Wizard를 엽니다.
+Apache > (설치한 Tomcat 버전, 예: Tomcat 9.0)을 선택하고, 로컬에 설치한 Tomcat 경로를 지정하여 서버를 등록합니다.
+프로젝트 폴더(ElectroCompare)를 우클릭한 뒤, **Run As > Run on Server**를 선택하여 방금 등록한 Tomcat 서버로 프로젝트를 실행합니다.
+서버가 정상적으로 켜지면, 웹 브라우저에서 http://localhost:8080/ElectroCompare/ (또는 IDE에서 열어준 기본 주소)로 접속하여 확인합니다.
+
 ```
 
 <br>

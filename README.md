@@ -46,14 +46,20 @@
 ## ⚙️ 설치 및 실행 방법
 
 ```bash
+이 프로젝트는 Java (JSP/Servlet) 및 Maven 기반으로 구축되었습니다. 
+로컬에서 실행하기 위해서는 Java(JDK), Maven, Apache Tomcat, MySQL이 설치되어 있어야 합니다.
+저는 Eclipse를 사용해서 개발하였습니다. 아마 다른 IDE로도 실행은 되겠지만 테스트는 안 해봤습니다.
+
 # 1. 저장소 클론
-$ git clone [https://github.com/your-username/your-repository.git](https://github.com/your-username/your-repository.git)
+$ git clone https://github.com/Yun-Gi/Electronic-Device-Comparison-Website-Back-End-2.git
 
-# 2. 필요한 패키지 설치
-$ npm install
+# 2. 데이터베이스 설정
+$ 
 
-# 3. 애플리케이션 실행
+# 3. 프로젝트 임포트 및 설정
 $ npm start
+
+# 4. 웹 서버 연동 및 실행
 ```
 
 <br>
